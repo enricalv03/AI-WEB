@@ -177,8 +177,8 @@ AI-Clothing-Web/
 │   ├── img/                # UI images & icons
 │   └── temp_imgs/          # Temporary processed images
 ├── 🖼️ images/
-│   ├── train/              # Training dataset (~3,750 images)
-│   ├── test/               # Test dataset (~1,000 images)
+│   ├── train/              # Training dataset (~3,750 images) "Recomended"
+│   ├── test/               # Test dataset (~1,000 images) "Recomended"
 │   ├── gt.json             # Complete ground truth labels
 │   └── gt_reduced.json     # Subset labels for testing
 └── 📊 output/              # Generated results & analysis

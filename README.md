@@ -35,13 +35,13 @@ The web interface allows users to visually understand how these algorithms filte
 ## 🏗️ Architecture
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │   Flask API     │    │   ML Algorithms │
-│                 │    │                 │    │                 │
-│ • HTML/CSS/JS   │◄──►│ • RESTful API   │◄──►│ • K-means       │
-│ • Responsive UI │    │ • Image Processing│    │ • KNN           │
-│ • Interactive   │    │ • Data Utils    │    │ • Classification│
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌────────────────────┐    ┌─────────────────┐
+│   Frontend      │    │   Flask API        │    │   ML Algorithms │
+│                 │    │                    │    │                 │
+│ • HTML/CSS/JS   │◄──►│ • RESTful API      │◄──►│ • K-means       │
+│ • Responsive UI │    │ • Image Processing │    │ • KNN           │
+│ • Interactive   │    │ • Data Utils       │    │ • Classification│
+└─────────────────┘    └────────────────────┘    └─────────────────┘
 ```
 
 ## 📋 Prerequisites
@@ -307,17 +307,9 @@ To deepen your understanding:
 This project is created for educational purposes as part of university coursework. Feel free to use it for learning and non-commercial purposes.
 
 ## 👥 Authors
-
-- **Student IDs**: 1713284, 1708087, 1756741
-- **Group**: 80
+- **Names**: Enric Alvarez, Federico, Arnau
 - **Course**: Introduction to Artificial Intelligence
-- **Institution**: University
-
-## 🙏 Acknowledgments
-
-- Course instructors for guidance on ML algorithm implementation
-- Clothing dataset providers
-- Open-source libraries that made this project possible
+- **Institution**: Autonomous University of Barcelona
 
 ---
 

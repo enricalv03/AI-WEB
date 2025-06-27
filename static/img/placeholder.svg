@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#f0f0f0"/>
+  <path d="M80,60 L120,60 L120,80 L80,80 Z" fill="#cccccc"/>
+  <path d="M70,90 L130,90 L130,100 L70,100 Z" fill="#cccccc"/>
+  <path d="M80,110 L120,110 L120,120 L80,120 Z" fill="#cccccc"/>
+  <path d="M60,140 L140,140 C140,140 150,140 150,130 L150,50 C150,50 150,40 140,40 L60,40 C60,40 50,40 50,50 L50,130 C50,130 50,140 60,140 Z" fill="none" stroke="#cccccc" stroke-width="2"/>
+  <text x="100" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="#999999">Image Not Available</text>
+</svg> 

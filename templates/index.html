@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fashion Explorer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">
+        <button id="theme-switch">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tshirt"></i>
+                <h1>AI Fashion Explorer</h1>
+            </div>
+            <p class="tagline">Discover clothing with intelligent filtering</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-panel">
+            <div class="filter-header">
+                <h2><i class="fas fa-sliders"></i> Filters</h2>
+                <button id="toggle-filters" class="icon-button">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            
+            <div class="filter-body">
+                <div class="filter-group">
+                    <label for="shape-filter">Clothing Type</label>
+                    <div class="custom-select">
+                        <select id="shape-filter">
+                            <option value="">All Types</option>
+                            <!-- Will be populated dynamically -->
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Colors</label>
+                    <div class="color-palette">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                    <div id="color-checkboxes" class="checkbox-group">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </div>
+                
+                <div class="filter-actions">
+                    <button id="apply-filters" class="primary-button">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                    
+                    <button id="reset-filters" class="secondary-button">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="results-section">
+            <div class="results-header">
+                <div class="results-stats">
+                    <h2>Results</h2>
+                    <span class="results-count"><span id="result-count">0</span> items found</span>
+                </div>
+                
+                <div class="results-actions">
+                    <div class="view-toggle">
+                        <button id="grid-view" class="view-button active" aria-label="Grid view">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button id="list-view" class="view-button" aria-label="List view">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="loading-indicator" class="loading-container hidden">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                </div>
+                <p>Searching for items...</p>
+            </div>
+            
+            <div id="results-container" class="grid-view">
+                <!-- Results will be displayed here -->
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Start exploring fashion items</h3>
+                    <p>Use the filters to discover clothing that matches your criteria</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-tshirt"></i>
+                    <span>AI Fashion Explorer</span>
+                </div>
+                <p>Intelligent clothing classification powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html> 
